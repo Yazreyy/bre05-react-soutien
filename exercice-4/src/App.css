@@ -1,0 +1,56 @@
+:root {
+    --primary: #646cff;
+    --bg: #f9f9f9;
+    --text: #213547;
+    --border: #ddd;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+}
+
+.exercise-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Utilitaires pour les onglets et listes */
+.flex-row { display: flex; gap: 10px; margin-bottom: 1rem; }
+.hidden { display: none; }
+.active-tab { border-bottom: 3px solid var(--primary); font-weight: bold; }
